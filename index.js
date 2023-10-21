@@ -68,7 +68,7 @@ async function run() {
       res.send(result);
     });
 
-    //   Update product
+    //   Update products
 
     app.put("/product-details/:id", async (req, res) => {
       const id = req.params.id;
