@@ -8,9 +8,6 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 app.use(cors());
 app.use(express.json());
 
-// brand-shop-database
-// Rw0v6mZqd11HFmuI
-
 const uri =
   "mongodb+srv://brand-shop-database:Rw0v6mZqd11HFmuI@cluster0.znptc55.mongodb.net/?retryWrites=true&w=majority";
 
