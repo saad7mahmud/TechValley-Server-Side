@@ -45,8 +45,7 @@ async function run() {
 
     //   read/get from cart
     app.get("/cart", async (req, res) => {
-      //   const id = req.params.id;
-      //   const query = { _id: new ObjectId(id) };
+     
       const result = await cartCollection.find({}).toArray();
       res.send(result);
     });
@@ -113,8 +112,7 @@ async function run() {
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
   } finally {
-    // Ensures that the client will close when you finish/error
-    // await client.close();
+    
   }
 }
 run().catch(console.dir);
